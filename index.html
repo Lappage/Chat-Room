@@ -38,7 +38,7 @@
           <div class="input-group-prepend">
             <div class="input-group-text">Your Message:</div>
           </div>
-          <input type="text" id="message" class="form-control" required />
+          <input type="text" id="message" class="form-control" autocomplete="off" required />
           <div class="input-group-append">
             <button type="submit" class="btn"><i class="bi bi-send"></i></button>
           </div>
@@ -48,9 +48,9 @@
       <form class="new-name my-3">
         <div class="input-group">
           <div class="input-group-prepend">
-            <div class="input-group-text">Update Name:</div>
+            <div class="input-group-text">Username:</div>
           </div>
-          <input type="text" id="name" class="form-control" required />
+          <input type="text" id="name" class="form-control" autocomplete="off" required />
           <div class="input-group-append">
             <button type="submit" class="btn"><i class="bi bi-floppy"></i></button>
           </div>
@@ -58,6 +58,7 @@
         <div class="update-msg"></div>
       </form>
     </div>
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -67,18 +68,21 @@
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
     <script>
       const firebaseConfig = {
-        apiKey: "AIzaSyBmvIX6udYWMKpQt8FVrFrYfRaNOCeWd5g",
-        authDomain: "chat-room-69eee.firebaseapp.com",
-        projectId: "chat-room-69eee",
-        storageBucket: "chat-room-69eee.appspot.com",
-        messagingSenderId: "300573943455",
-        appId: "1:300573943455:web:1589a46f766cd02981e4aa",
+        apiKey: "AIzaSyDqFNUbw8nGu6VWpjm5Lp3meYo7txpqPPo",
+        authDomain: "to-do-app-1306a.firebaseapp.com",
+        projectId: "to-do-app-1306a",
+        storageBucket: "to-do-app-1306a.appspot.com",
+        messagingSenderId: "70054467191",
+        appId: "1:70054467191:web:1744f79affab7395be1872",
+        measurementId: "G-944DSCM4LX",
       };
 
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       const db = firebase.firestore();
     </script>
-    <script src="script.js"></script>
+    <script src="scripts/chat.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/app.js"></script>
   </body>
 </html>
