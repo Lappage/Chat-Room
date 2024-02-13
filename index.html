@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -52,7 +52,7 @@
           </div>
           <input type="text" id="name" class="form-control" required />
           <div class="input-group-append">
-            <button type="submit" class="btn"><i class="bi bi-floppy"></i></i></button>
+            <button type="submit" class="btn"><i class="bi bi-floppy"></i></button>
           </div>
         </div>
         <div class="update-msg"></div>
@@ -63,6 +63,22 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyBmvIX6udYWMKpQt8FVrFrYfRaNOCeWd5g",
+        authDomain: "chat-room-69eee.firebaseapp.com",
+        projectId: "chat-room-69eee",
+        storageBucket: "chat-room-69eee.appspot.com",
+        messagingSenderId: "300573943455",
+        appId: "1:300573943455:web:1589a46f766cd02981e4aa",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
